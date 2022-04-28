@@ -6,7 +6,8 @@ Busby, M.A.; Stewart, C.; Miller, C.A.; Grzeda, K.R.; Marth, G.T. Scotty: a web 
 
 Yi Qiao, Director of Research & Science in Gabor Marth's lab, University of Utah, kindly provided the following instructions for accessing Scotty from a Linux machine:
 
-dockerized scotty and its dependencies into the image "qiaoy/marthlab.scotty" which is available on DockerHub. 
+Yi Qiao says:
+"We have dockerized scotty and its dependencies into the image "qiaoy/marthlab.scotty" which is available on DockerHub. 
 Suppose you have docker running on a local linux server, the following is all what is necessary to get scotty up and running again:
 
 $ docker run -d -p 8080:80 qiaoy/marthlab.scotty
@@ -15,6 +16,6 @@ the -d option makes it run in daemon (detached) mode, and
 the -p 8080:80 binds port 80 inside the container to port 8080 on the host. 
 If this is executed successfully, you should be able to open a web browser and go to http://127.0.0.1:8080/ and see the scotty web page. 
 If you do this on a shared local server, you would of course need to replace 127.0.0.1 with the appropriate hostname, and make sure 
-port 8080 is open on the firewall.
+port 8080 is open on the firewall."
 
 
